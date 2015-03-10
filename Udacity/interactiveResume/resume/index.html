@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+    <script type="text/javascript" src="js/resumebuilder.js"></script>
+
+</head>
+
+<body>
+
+<!-- navigation bar -->
+
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top" id="navb">
+            <div class="container navcontainer">
+                <div class="navbar-header" id="header">
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#aboutSection" class="scrollLink">About</a></li>
+                        <li><a href="#projectSection" class="scrollLink">Projects</a></li>
+                        <li><a href="#experienceSection" class="scrollLink">Experience</a></li>
+                        <li><a href="#placesSection" class="scrollLink">Places</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- contact modal -->
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contact Information</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="test">
+                    <span id="twitter">
+
+                    </span>
+                    <span id="github">
+
+                    </span>
+                    <span id="location">
+
+                    </span>
+                    <span id="phoneData">
+
+                    </span>
+                    <span id="email">
+
+                    </span>
+
+                </div>
+                <form class="form-horizontal">
+                    <input type="text" class="form-control" placeholder="Your E-mail"><br>
+                    <input type="text" class="form-control" placeholder="Subject"><br>
+                    <textarea class="form-control" rows="3" placeholder="Type here"></textarea><br>
+                    <button type="submit" class="btn btn-default" id="submitBut" onclick="alert('You cannot actually e-mail me.. yet!')">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Inspirational picture banner-->
+
+<div class="container headBanner">
+    <div class="row">
+        <div class="col-lg-12 banner">
+            <div id="bannerImage">
+                <div id="quoter">
+                    <span id="rotate"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- profile picture -->
+
+    <div id="proPic">
+    </div>
+
+<!-- container -->
+
+<div class="container content">
+
+    <hr>
+
+    <!-- about section containing bio, skills and education -->
+
+    <div class="col-lg-12 projects" id="aboutSection">About</div>
+
+    <!-- bio, skills and education-->
+
+    <div class="row">
+        <div class="col-lg-12 aboutSection">
+            <div id="welcomeMessage">
+            </div>
+            <div id="skills">
+            </div>
+            <div id="educationWrap">
+                <div id="educationIntro">
+
+                </div>
+                <div id="education">
+
+                </div>
+            </div>
+            <div id="onlineCourseWrap">
+                <div id="onlineCourseIntro">
+
+                </div>
+                <div id="onlineCourse">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- project section -->
+
+    <div class="projects" id="projectSection">
+        Projects
+    </div>
+
+    <div class="row" id="projectRow">
+
+    </div>
+    <div class="row" id="moreProjects">
+
+    </div>
+
+
+    <!-- show more projects button-->
+
+    <button id="moreButton">Show me more projects!</button>
+
+    <!-- projectmodals -->
+
+    <div id="modalWrapper">
+
+    </div>
+
+    <hr>
+
+    <!-- work experience section-->
+
+    <div class="row featurette">
+        <div class="col-md-12">
+            <div class="projects" id="experienceSection">Work Experience</div>
+            <div id="workExp">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- google map section-->
+
+    <div class="projects" id="placesSection">Places I've studied, lived and worked</div>
+
+    <div class="row">
+
+        <div class="col-lg-12" id="mapDiv"></div>
+    </div>
+
+    <hr>
+
+    <!-- footer section -->
+
+    <footer>
+        <p class="back-to-top"><a href="#">Back to top</a></p>
+        <p>&nbsp; &middot; &nbsp;
+        <a href="https://twitter.com/GenkiMonsuta"><img class="icons" src="images/twitter.png" alt="twitter icon"></a>&nbsp; &middot; &nbsp;
+        <a href="https://github.com/GenkiMonsuta"><img class="icons" src="images/github.png" alt="github icon"></a>&nbsp; &middot; &nbsp;
+        </p>
+    </footer>
+
+</div>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+    if(document.getElementById('map') === null) {
+        document.getElementById('mapDiv').style.display = 'block';
+    }
+
+</script>
+
+
+</body>
+</html>

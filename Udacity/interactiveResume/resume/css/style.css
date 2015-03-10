@@ -1,0 +1,226 @@
+body{
+    background-color: #99B8B8;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    z-index: 1;
+    position: relative;
+}
+
+/* navigation bar */
+.navcontainer{
+    margin-left: 5px;
+}
+
+#navb{
+    margin-bottom: 5px;
+}
+
+#mainTitle{
+    color: #9BCFD4;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
+
+#subTitle{
+    font-size: 10px;
+    color: #97F2D7 ;
+}
+
+/* contact modal */
+
+#phoneNumber, #stekBel, #emailAdj{
+    color: #3366BB;
+}
+
+#emailAdj{
+    font-size: 10px;
+}
+
+.form-control:focus{
+    border-color: rgba(82,168,236,.8);
+    outline: 0;
+    -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+}
+
+/* inspirational picture section */
+
+.headBanner{
+    position: relative;
+    z-index: -1;
+
+}
+
+#bannerImage{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5px;
+    background-image: url("http://i.imgur.com/nriQgrk.jpg");
+    background-size: 100% 100%;
+}
+
+#quoter{
+    margin-left: 50px;
+    margin-right: 100px;
+    width: 95%;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+
+#rotate{
+    color: #E6F4FA;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px;
+    position: relative;
+    z-index: 2;
+
+}
+
+#proPic{
+    top: 0;
+    position: absolute;
+    right: 10%;
+    z-index: 1000 !important;
+}
+
+@media all and (max-width: 1200px) {
+    #rotate {
+        font-size: 2em;
+    }
+    #quoter{
+        margin-left: 10px;
+    }
+}
+@media all and (max-width: 1000px) {
+    #rotate {
+        font-size: 1.6em;
+    }
+}
+@media all and (max-width: 500px) {
+    #rotate {
+        font-size: 1.2em;
+    }
+    #subTitle{
+        display: none;
+    }
+
+}
+@media all and (max-width: 570px) {
+    #proPic{
+        display: none;
+    }
+}
+
+/* content container */
+/* about section */
+.container{
+    width: 80%;
+    position: relative;
+}
+
+.aboutSection{
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: justify;
+}
+
+#skills{
+    text-align: center;
+    font-weight: bold;
+}
+
+#education{
+    text-align: center;
+}
+
+#onlineCourse{
+    text-align: center;
+}
+
+/* project section */
+
+.projects{
+    text-align: center;
+    color: #484A47;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.img-circle{
+    width: 140px;
+    height: 140px;
+    background-size: 100% 100%;
+}
+
+.projectCircle:hover{
+    -moz-box-shadow: 0 0 8px #3369DF;
+    box-shadow: 0 0 11px #3369DF;
+}
+
+.projectDivider{
+    width: 30px;
+}
+
+#moreProjects{
+    display: none;
+}
+
+#moreButton{
+    margin-top: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #99B8B8;
+    border: none;
+    color: #3369DF;
+}
+
+.modal-header{
+    background-color: #9BCFD4 ;
+}
+
+.modal-backdrop {
+    background-color: #082D33;
+}
+
+/* google map section */
+#map {
+    display: block;
+    height: 100%;
+}
+
+#mapDiv {
+    height: 400px;
+}
+
+/* footer section */
+
+.back-to-top {
+    position: fixed;
+    bottom: 50%;
+    left: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: rgba(82,168,236,.6);
+}
+
+/* footer */
+
+.icons{
+    width: 20px;
+    height: 20px;
+}
+
